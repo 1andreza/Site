@@ -1,1 +1,38 @@
-
+<!doctype html>
+<html lang= "pt-br">
+<head> 
+  <style>
+    #area {
+      background-color: purple;
+      color: pastel pink
+      font: italic 15pt Arial;
+      height: 100px;
+      width: 200px
+      text-align: center;
+      line-height: 100px;
+      border: thick groove white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ola Mundo</h1>
+  <p>Resultado aqui</p>
+  <p> aprendendo a usar o <strong>DOM</strong>em JS</p>
+  <div> id="area" onclick="clicar()"onmouseenter="entrar()" onmouseout= "sair()">Clique aqui</div>
+  <script>
+    var a = document.getElementById ('area')
+    function clicar () {
+      a.InnerText= 'Clicou!!'
+    }
+    /*var pl = window.documentgetElementsByTagName('p')[1]
+    document.write("esta escrito: +pl.innerHTML)
+    p1.style.color= 'green'
+    window.alert ("ola mundo")
+    window.confirm ("esta gostando de JS?")
+    var n1 = Number (window.prompt ("digite um numero"))
+    var n2 = Number (window.prompt ("digite outro numero"))
+    var s = n1 + n2
+    window.alert (' a soma é '+s)
+    */
+  </script>
+</body> 
