@@ -1,45 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, incial-scale=1.0">
     <style>
-      #area { 
-              background-color: blue;
-              color: green;
-              font: italic 15pt Arial;
-              height: 100px;
-              width: 200px;
-              text-align: center;
-              line-height: 100px;
-              border: thivk groove yellow;
+        #area {
+            background-color: blue;
+            color: pink;
+            font: italic 15pt Arial;
+            height: 100px;
+            width: 200px;
+            text-aling: center;
+            line-height: 100px;
+            border: trick groove yellow;
+            
         }
     </style>
-  </head>
-   <body>
-    <h1> Ola Mundo</h1>
-    <p> resultado aqui</p>
+    </head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>resultado aqui</p>
     <p> aprendendo a usar o <strong>DOM</strong> em JS</p>
-    <div id="area" ontouchstart="clicar()" ontouchend="entrar()" ontouchmove="sair()">Clique aqui</div>
-     <script>
-       var a = document.getElementById('area')
-       function clicar(){
-                a.InnerText = 'Clicou!'
-       }
-      function entrar () {
-                a.InnerText = 'Entrou!'
-      }
-      function sair () {
-                a.InnerText = 'Saiu!'
-         }
-         /*var p1 =window.document.getElementsByTagName('p')[1]
-         document.write("esta escrito: "p1.innerHTML)
-         p1.style.color='purple'
-         window.alert("ola, mundo")
-         window.confirm("esta gostando de JS?)
-         var n1 = Number(window.prompt("digite um numero"))
-         var n2 = Number(window.prompt("digite outro numero"))
-         var s = n1 + n2
-         window.alert('a soma é '+s)
-         */
-     </script>
-  </body>
+    <div id="area" onclick="clicar()" ontouchstart="entrar()" ontouchend="sair()">Clique Aqui</div>
+ <script>
+     var a = document.getElementById('area')
+     function clicar(){
+         a.innerText = 'clicou!';
+         a.style.backgroundColor = '#8B0000';
+        }
+     
+     var b = document.getElementById('area')
+     function entrar(){
+            a.innerText = 'segurou!';
+            a.style.backgroundColor = '#3CB371';
+        }
+
+     var c = document.getElementById('area')
+     function sair(){
+            a.innerText = 'Deslizou!';
+            a.style.backgroundColor = '#00CED1';
+        }
+     
+ </script>        
+</body>
 </html>
