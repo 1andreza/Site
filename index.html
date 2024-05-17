@@ -1,46 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"content="width=device-width, incial-scale=1.0">
+  <head>
     <style>
-        #area {
-            background-color:purple;
-            color: black;
-            font: italic 15pt Arial;
-            height: 100px;
-            width: 200px;
-            text-aling: center;
-            line-height: 100px;
-            border: thick groove yellow;
-            
+      #area { 
+              background-color: blue;
+              color: green;
+              font: italic 15pt Arial;
+              height: 100px;
+              width: 200px;
+              text-align: center;
+              line-height: 100px;
+              border: thick groove yellow;
         }
     </style>
-    </head>
-<body>
-    <h1>Olá, mundo!</h1>
-    <p>resultado aqui</p>
+  </head>
+   <body>
+    <h1> Ola Mundo</h1>
+    <p> resultado aqui</p>
     <p> aprendendo a usar o <strong>DOM</strong> em JS</p>
-    <div id="area" onclick="clicar()" ontouchstart="entrar()" ontouchend="sair()">Clique Aqui</div>
- <script>
-     var a = document.getElementById('area')
-     function clicar(){
-         a.innerText = 'clicou!';
-         a.style.backgroundColor = '#C71585';
-        }
-     
-     var b = document.getElementById('area')
-     function entrar(){
-            a.innerText = 'segurou!';
-            a.style.backgroundColor = '#FF1493';
-        }
-
-     var c = document.getElementById('area')
-     function sair(){
-            a.innerText = 'Deslizou!';
-            a.style.backgroundColor = '#DB7093';
-        }
-     
- </script>        
-</body>
+    <div id="area" ontouchstart="clicar()" ontouchend="entrar()" ontouchmove="sair()">Clique aqui</div>
+     <script>
+       var a = document.getElementById('area')
+       function clicar(){
+                a.InnerText = 'Clicou!';
+         }
+       function entrar (){
+                a.InnerText = 'Entrou!';
+       }
+       function sair () {
+                 a.InnerText = 'Saiu!';
+       }
+     </script>
+  </body>
 </html>
