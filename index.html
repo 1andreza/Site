@@ -1,35 +1,31 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang ="pt-br">
   <head>
-    <style>
-      #area { 
-              background-color: blue;
-              color: green;
-              font: italic 15pt Arial;
-              height: 100px;
-              width: 200px;
-              text-align: center;
-              line-height: 100px;
-              border: thick groove yellow;
-        }
-    </style>
+    <meta charset="utf-8">
+    <title> exercicio </title>
   </head>
-   <body>
-    <h1> Ola Mundo</h1>
-    <p> resultado aqui</p>
-    <p> aprendendo a usar o <strong>DOM</strong> em JS</p>
-    <div id="area" touchstart="clicar()" touchend="entrar()" touchmove="sair()">Clique aqui</div>
-     <script>
-       var a = document.getElementById('area')
-       function clicar(){
-                a.InnerText = 'Clicou!';
-         }
-       function entrar (){
-                a.InnerText = 'Entrou!';
-       }
-       function sair () {
-                 a.InnerText = 'Saiu!';
-       }
-     </script>
+  <body>
+    <h1> atividade </h1>
+    <p> criar um site que lê um valor dado pelo usuário e soma 10 se for ímpar, ou subtrai 10 caso seja par.</p>
+    <imput id="num" type="number"> Digite um número
+    <imput type="button" value="enter" onclick="validar()">
+      <div id="bar">RESPOSTA</div>
+      <script>
+        function validar (){
+          var n = document.getElementById ('num')
+          var n1 = Numer (n.value)
+          var bar = document.getElementById ('bar')
+          bar.innerHTML = "O NÚMERO DIGITADO É " +n1
+          var n2 = n1 % 2
+          if ( n2 == 0 ) {
+            var r1=("par")
+            var r2= n1- 10
+          }
+          else { 
+            var r1 = ("ímpar") 
+            var r2 = n1 + 10
+          }
+          bar.innerHTML = "O NÚMERO DIGITADO É" +r1 + r2
+        }
+      </script>
   </body>
-</html>
