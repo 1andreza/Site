@@ -65,7 +65,7 @@
             let exibir = document.getElementById('exibirContagem');
             exibir.innerHTML = '';
 
-            for (let i = numeroInicial; i >= 0; i--) {
+            if (let i = numeroInicial; i >= 0; i--) {
                 setTimeout(() => {
                     exibir.innerHTML += i + '<br>';
                 }, (numeroInicial - i) * 1000);
@@ -76,7 +76,7 @@
             let exibir = document.getElementById('exibirTabuada');
             exibir.innerHTML = '';
 
-            for (let i = 1; i <= 10; i++) {
+            if (let i = 1; i <= 10; i++) {
                 exibir.innerHTML += `<li>${numero} x ${i} = ${numero * i}</li>`;
             }
         }
