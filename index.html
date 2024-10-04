@@ -1,31 +1,29 @@
-<!doctype html>
-<html lang ="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title> exercicio </title>
-  </head>
-  <body>
-    <h1> atividade </h1>
-    <p> criar um site que lê um valor dado pelo usuário e soma 10 se for ímpar, ou subtrai 10 caso seja par.</p>
-    <input id="num" type="number"> Digite um número
-    <input type="button" value="enter" onclick="validar()">
-      <div id="bar">RESPOSTA</div>
-      <script>
-        function validar (){
-          var n = document.getElementById ('num')
-          var n1 = Number (n.value)
-          var bar = document.getElementById ('bar')
-          bar.innerHTML = "O NÚMERO DIGITADO É " +n1
-          var n2 = n1 % 2
-          if ( n2 == 0 ) {
-            var r1=("par")
-            var r2= n1- 10
-          }
-          else { 
-            var r1 = ("ímpar") 
-            var r2 = n1 + 10
-          }
-          bar.innerHTML = "O NÚMERO DIGITADO É "+r1+r2
-        }
-      </script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Interativas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tabuada</h1>
+        <input type="number" id="numero" placeholder="Digite um número" />
+        <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+        <div id="tabuada"></div>
+
+        <h1>Contagem Regressiva</h1>
+        <input type="number" id="contagem" placeholder="Digite um número" />
+        <button onclick="contagemRegressiva()">Começar Contagem</button>
+        <div id="resultadoContagem"></div>
+
+        <h1>Adivinhe o Número</h1>
+        <input type="number" id="adivinha" placeholder="Adivinhe um número entre 1 e 10" />
+        <button onclick="adivinhar()">Adivinhar</button>
+        <div id="resultadoAdivinha"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
